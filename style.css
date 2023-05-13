@@ -1,7 +1,18 @@
 * {
-    background-color: black;
     font-family: "Lucida Console", "Courier New", monospace;
     color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        black 0%,
+        black 20%,
+        grey 80%,
+        grey 100%
+    );
 }
 
 .header {
@@ -40,7 +51,7 @@ ul {
 
 button {
     display: flex;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
     margin-top: 12px;
     border: none;
     background: #ea1538;
@@ -62,18 +73,26 @@ a {
     text-decoration: none;
 }
 
-.header2 {
+.mid-part {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
 }
 
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
 
 .images {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    gap: 25px;
 }
 
 span ul a {
@@ -82,4 +101,59 @@ span ul a {
     padding: 50px;
 }
 
+.header2 {
+    font-size: 36px;
 
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 36px;
+    background-color: black;
+    padding: 150px;
+    font-style: italic;
+    margin-top: 240px;
+}
+
+.break2 {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.author {
+    margin-left: auto;
+}
+
+.join {
+    display: flex;
+    font-size: 18px;
+    border: 2px solid #ea1538;
+    border-radius: 12px;
+    padding: 50px 20px;
+    margin: 150px 280px;
+    gap: 50px;
+    background-color: black;
+}
+
+.sign-up {
+    flex: 1;
+    max-width: 90px;
+    margin-left: auto;
+}
+
+.newsletter {
+    flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: grey;
+    padding: 20px;
+}
